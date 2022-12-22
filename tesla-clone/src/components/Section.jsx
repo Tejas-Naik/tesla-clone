@@ -1,24 +1,31 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from 'react';
+import Fade from 'react-reveal/Fade';
+import styled from 'styled-components';
+
 
 function Section(props) {
     return (
         <Wrap bgImage={props.backgroundImg}>
             <ItemText>
-                <h1>{props.title}</h1>
-                <p>{props.description}</p>
+                <Fade bottom>  { /* React Reveal to fade-in from bottom */}
+                    <h1>{props.title}</h1>
+                    <p>{props.description}</p>
+                </Fade>
             </ItemText>
 
             <Buttons>
-                <ButtonGroup>
-                    <LeftButton>
-                        {props.leftBtnText}
-                    </LeftButton>
-                    <RightButton>
-                        {props.rightBtnText}
-                    </RightButton>
-                </ButtonGroup>
-                <DownArrow src="/images/down-arrow.svg" />
+                <Fade bottom>
+                    <ButtonGroup>
+                        <LeftButton>
+                            {props.leftBtnText}
+                        </LeftButton>
+
+                        {props.rightBtnText && <RightButton>
+                            {props.rightBtnText}
+                        </RightButton>}
+                    </ButtonGroup>
+                    <DownArrow src="/images/down-arrow.svg" />
+                </Fade>
             </Buttons>
         </Wrap>
     )

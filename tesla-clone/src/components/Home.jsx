@@ -37,8 +37,22 @@ function Home() {
                 title="Lowest Cost Solar Panels in America"
                 description="Money-back guarantee"
                 backgroundImg="solar-panel.jpg"
-                leftBtnText="Custom order"
-                rightBtnText="Existing Inventory"
+                leftBtnText="Order now"
+                rightBtnText="Learn More"
+            />
+            <Section
+                title="Solar for new Roofs"
+                description="Solar Roof Costs Less thanThan a New Roof Plus Solar Panels"
+                backgroundImg="solar-roof.jpg"
+                leftBtnText="Order now"
+                rightBtnText="Learn More"
+            />
+            <Section
+                title="Accessories"
+                description=""
+                backgroundImg="Accessories.jpg"
+                leftBtnText="Shop now"
+                rightBtnText=""
             />
         </Container>
     )
